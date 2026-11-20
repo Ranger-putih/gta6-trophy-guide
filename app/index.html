@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — All 55 Trophies, Roadmap &amp; Tracker</title>
+<meta name="description" content="An offline guide and tracker for the 55 official Grand Theft Auto VI trophies on PlayStation 5: roadmap to the platinum, missable warnings, spoiler setting, and a saved checklist.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 official trophies</p>
+    <h1>GTA VI Trophy Guide</h1>
+    <p class="subtitle">Every trophy, in your own words, with a roadmap to the platinum — and a checklist that remembers your progress. Works fully offline: no network, no account, nothing leaves your browser.</p>
+    <div class="progress-wrap" role="status" aria-live="polite">
+      <div class="progress-line"><span id="progress-text">0 of 55 earned</span><span id="progress-pct">0%</span></div>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <div class="grade-counts" id="grade-counts"></div>
+    </div>
+    <p class="honesty">Heads up: the game had not released when this guide was written. Each guide is derived from the official trophy description plus general GTA knowledge, and it says so where a detail is still unconfirmed — nothing here is copied from another guide.</p>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+    <h2 id="roadmap-title">Roadmap to the platinum</h2>
+    <p class="section-intro">“Vice Got a Price!” unlocks when the other 54 are done. Work the phases in order — each one feeds the next.</p>
+    <ol class="phases">
+      <li>
+        <h3>Phase 1 — Play the story</h3>
+        <p>Chapters 1–4 and the final mission, plus the named story missions (Gone Fishing, Breakfast Run, The Cartel Heist, Child's Play, Headliners, VCIA Takedown, Operation Savage Glory). This earns the 18 story trophies and opens the map. Stunts, vehicle discoveries and shop spending build up on the side — do not grind them yet.</p>
+      </li>
+      <li>
+        <h3>Phase 2 — Stranger missions</h3>
+        <p>Finish stranger strands across Leonida — Andy, Kenton, Billy, Randy, Tyrone and the rest — until 8 strands are complete for “Strangers &amp; Freaks” (silver). Strands are easy to leave half-done, so chase each stranger's marker until their final mission ends.</p>
+      </li>
+      <li>
+        <h3>Phase 3 — Activities &amp; challenges</h3>
+        <p>Try every activity type once, then go for the wins: 20 different races, drone races at every location, gold medals at the shooting range, beating Cal at fishing, an arcade game, bowling at Kolt &amp; Associates, 50 challenges and 250 stunts. Most of these are repeatable, so retry freely.</p>
+      </li>
+      <li>
+        <h3>Phase 4 — Collectibles</h3>
+        <p>Explore all of Leonida, meditate at every spot, WAiNK It at 100 locations, discover 100 vehicles and complete 3 collectible card sets. Do these on one big map sweep — they overlap heavily.</p>
+      </li>
+      <li>
+        <h3>Phase 5 — Cleanup &amp; 100%</h3>
+        <p>Robberies and open-world feats (bank vaults, armored truck, gang operations, jewelry store), money goals ($250,000 laundered, $100,000 spent, all garages, 10 Scooter Bros registrations), the partner trophies, and the three missable ones below. Finish with “A Long Road” — 100% completion — and the platinum pops.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="missable-box" id="missable" aria-labelledby="missable-title">
+    <h2 id="missable-title">⚠ Missable trophies — read this first</h2>
+    <p>Most trophies in this list are repeatable: missions can be retried and activities re-attempted. Only three are tied to one-time moments, so handle them with care:</p>
+    <ul id="missable-list"></ul>
+    <p class="missable-note">Everything else can be cleaned up after the story. When in doubt, keep a spare save before a big story choice.</p>
+  </section>
+
+  <section class="controls" aria-label="Filters and progress tools">
+    <div class="control-row">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name…" autocomplete="off"></label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="missable">Missable</option>
+          <option value="collectible">Collectibles</option>
+          <option value="activity">Activities</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label class="check-label"><input id="hide-spoilers" type="checkbox" checked> Hide story spoilers</label>
+      <label class="check-label"><input id="earned-only" type="checkbox"> Earned only</label>
+    </div>
+    <div class="control-row buttons">
+      <button id="export" type="button">Export progress (JSON)</button>
+      <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button" class="danger">Reset progress</button>
+      <span id="status" class="status" aria-live="polite"></span>
+    </div>
+    <p class="controls-note">Spoiler mode hides the name, description and guide of story trophies you have not earned yet. Tick a trophy to reveal it. Progress is saved in this browser (localStorage) and can be exported as a file.</p>
+  </section>
+
+  <section aria-labelledby="list-title">
+    <h2 id="list-title">All 55 trophies</h2>
+    <p id="result-count" class="result-count"></p>
+    <div id="trophy-list" class="trophy-list"></div>
+    <p id="empty" class="empty" hidden>No trophies match these filters.</p>
+  </section>
+
+  <section class="sources-note">
+    <h2>Sources &amp; method</h2>
+    <p>Official trophy names, descriptions and grades are shown as PlayStation publishes them. Each guide is written in our own words from the official description and general GTA knowledge, and cites its sources beside the guide: the <strong>Official trophy description</strong>, <strong>Exophase</strong> and <strong>PSNProfiles</strong>. No text is copied from those guides, and no Rockstar Games logo, artwork or game screenshot is used anywhere in this guide.</p>
+  </section>
+</main>
+
+<footer>
+  <p>GTA VI Trophy Guide — an unofficial fan-made guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar Games. Trophy data: the official 55-trophy list (2026-11-18). Released under the MIT License.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
