@@ -1,8 +1,8 @@
 # GTA VI Trophy Guide — All 55 Trophies, Roadmap & Tracker
 
-[![make.fun](https://img.shields.io/badge/make.fun-bounty-blue)](https://make.fun)
-[![Bounty: gta6-trophy-guide-01](https://img.shields.io/badge/bounty-gta6--trophy--guide--01-orange)](https://make.fun/bounty/gta6-trophy-guide-01)
-[![Play on make.fun](https://img.shields.io/badge/play-make.fun-green)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/Ranger-putih/gta6-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/Ranger-putih/gta6-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline guide and tracker for the **55 official Grand Theft Auto VI trophies** on PlayStation 5
 (1 platinum, 2 gold, 6 silver, 46 bronze), built for the
